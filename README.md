@@ -3,6 +3,8 @@ The model achieved F1 score : 0.984
 
 ### Installation
 ```bash
+git clone https://github.com/bino282/ViNLP.git
+cd ViNLP
 python setup.py develop build
 ```
 
