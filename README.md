@@ -6,6 +6,7 @@ The model achieved F1 score : 0.984
 python setup.py develop build
 ```
 
+### Test
 ``` bash
 from ViNLP import BertVnTokenizer
 tokenizer = BertVnTokenizer()
