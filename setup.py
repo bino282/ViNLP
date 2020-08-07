@@ -12,5 +12,6 @@ setup(
     url="https://github.com/bino282/ViNLP.git",
     description="A NLP toolkit for Vietnamese",
     install_requires=requirements,
+    packages=find_packages(),
     cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension},
 )
