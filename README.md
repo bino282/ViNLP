@@ -47,13 +47,13 @@ The model achieved F1 score VLSP 2018 for all named entities including nested en
 ``` bash
 from ViNLP import BertVnNer
 bert_ner_model = BertVnNer()
-sentence = "Về cơ chế đặc thù cho TP Hải Phòng, Thủ tướng cho biết Bộ Chính trị đã ban hành Nghị quyết 45 về phát triển TP Hải Phòng và Chính phủ đang có chương trình hành động để triển khai Nghị quyết này, đóng góp vào sự phát triển của thành phố Cảng, sánh vai cùng các thành phố của khu vực châu Á."
+sentence = "Theo SCMP, báo cáo của CSIS với tên gọi Định hình Tương lai Chính sách của Mỹ với Trung Quốc cũng cho thấy sự ủng hộ tương đối rộng rãi của các chuyên gia về việc cấm Huawei, tập đoàn viễn thông khổng lồ của Trung Quốc"
 entities = bert_ner_model.annotate([sentence])
 print(entities)
 
 ```
 ``` bash
-[{'LOCATION': ['TP Hải Phòng', 'châu Á'], 'ORGANIZATION': ['Bộ Chính trị']}]
+[{'ORGANIZATION': ['SCMP', 'CSIS', 'Huawei'], 'LOCATION': ['Mỹ', 'Trung Quốc']}]
 
 ```
 
