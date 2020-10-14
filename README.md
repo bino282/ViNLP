@@ -1,4 +1,5 @@
 # Vietnamese toolkit with bert
+ViNLP is a system annotation for Vietnamese, it use pretrain [Bert4news](https://github.com/bino282/bert4news/) to fine-turning to NLP problems in Vietnamese components of wordsegmentation,Named entity recognition (NER)  and achieve high accuravy.
 
 ### Installation
 ```bash
