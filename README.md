@@ -8,14 +8,26 @@ python setup.py develop build
 ```
 
 ### Test Segmentation
-The model achieved F1 score : 0.984
+The model achieved F1 score : 0.984 on VLSP 2013 dataset
+
+|Model | F1 |
+|--------|-----------|
+| **BertVnTokenizer** | 98.40 |
+| **DongDu** | 96.90 |
+| **JvnSegmenter-Maxent** | 97.00 |
+| **JvnSegmenter-CRFs** | 97.06 |
+| **VnTokenizer** | 97.33 |
+| **UETSegmenter** | 97.87 |
+| **VnTokenizer** | 97.33 |
+| **VnCoreNLP (i.e. RDRsegmenter)** | 97.90 |
+
+
 ``` bash
 from ViNLP import BertVnTokenizer
 tokenizer = BertVnTokenizer()
 sentences = tokenizer.split(["Tổng thống Donald Trump ký sắc lệnh cấm mọi giao dịch của Mỹ với ByteDance và Tecent - chủ sở hữu của 2 ứng dụng phổ biến TikTok và WeChat sau 45 ngày nữa."])
 print(sentences[0])
 ```
-
 ``` bash
 Tổng_thống Donald_Trump ký sắc_lệnh cấm mọi giao_dịch của Mỹ với ByteDance và Tecent - chủ_sở_hữu của 2 ứng_dụng phổ_biến TikTok và WeChat sau 45 ngày nữa .
 
