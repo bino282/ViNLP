@@ -1,5 +1,4 @@
-# Vietnamese word tokenization use bert
-The model achieved F1 score : 0.984
+# Vietnamese toolkit with bert
 
 ### Installation
 ```bash
@@ -9,6 +8,7 @@ python setup.py develop build
 ```
 
 ### Test Segmentation
+The model achieved F1 score : 0.984
 ``` bash
 from ViNLP import BertVnTokenizer
 tokenizer = BertVnTokenizer()
@@ -22,6 +22,15 @@ Tổng_thống Donald_Trump ký sắc_lệnh cấm mọi giao_dịch của Mỹ 
 ```
 
 ### Test Named Entity Recognition
+The model achieved F1 score VLSP 2018 for all named entities including nested entities : 0.786
+
+|Model | F1 |
+|--------|-----------|
+| **BertVnNer** | 78.60 |
+| **VNER Attentive Neural Network** | 77.52 |
+| **vietner CRF (ngrams + word shapes + cluster + w2v)** | 76.63 |
+| **ZA-NER BiLSTM** | 74.70 |
+
 ``` bash
 from ViNLP import BertVnNer
 bert_ner_model = BertVnNer()
