@@ -47,8 +47,8 @@ class BertVnNer:
             else:
                 if(not os.path.exists(path_root)):
                     os.makedirs(path_root)
-                logger.info("Downloading.... model from https://insai.s3-ap-southeast-1.amazonaws.com/transformers_model/VnBertNer.zip")
-                urllib.request.urlretrieve('https://insai.s3-ap-southeast-1.amazonaws.com/transformers_model/VnBertNer.zip', os.path.join(path_root,'VnBertNer.zip'))
+                logger.info("Downloading.... model from https://nhanv.s3-ap-southeast-1.amazonaws.com/vinlp_model/VnBertNer.zip")
+                urllib.request.urlretrieve('https://nhanv.s3-ap-southeast-1.amazonaws.com/vinlp_model/VnBertNer.zip', os.path.join(path_root,'VnBertNer.zip'))
                 logger.info("Model is saved in {}".format(path_root))
                 with zipfile.ZipFile(os.path.join(path_root,'VnBertNer.zip'), 'r') as zip_ref:
                     zip_ref.extractall(path_root)
