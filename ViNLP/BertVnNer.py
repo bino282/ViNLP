@@ -22,7 +22,7 @@ if torch.cuda.is_available():
 
     logger.info('There are %d GPU(s) available.' % torch.cuda.device_count())
 
-    logger.info('We will use the GPU:' % torch.cuda.get_device_name(0))
+    logger.info('We will use the GPU: %s' % torch.cuda.get_device_name(0))
 else:
     logger.info('No GPU available, using the CPU instead.')
     device = torch.device("cpu")
