@@ -7,6 +7,10 @@ git clone https://github.com/bino282/ViNLP.git
 cd ViNLP
 python setup.py develop build
 ```
+or 
+```bash
+pip install git+https://github.com/bino282/ViNLP.git
+```
 
 ### Test Segmentation
 The model achieved F1 score : 0.984 on VLSP 2013 dataset
