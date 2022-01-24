@@ -34,7 +34,7 @@ class BertVnTokenizer:
             else:
                 if(not os.path.exists(path_root)):
                     os.makedirs(path_root)
-                print("Downloading.... model from https://insai.s3-ap-southeast-1.amazonaws.com/transformers_model/VnBertTokenizer.zip")
+                print("Downloading.... model from https://insai.s3-ap-southeast-1.amazonaws.com/transformers_model/VnBertTokenizer.zip") # this url is not valid now, please fix it
                 urllib.request.urlretrieve('https://insai.s3-ap-southeast-1.amazonaws.com/transformers_model/VnBertTokenizer.zip', os.path.join(path_root,'VnBertTokenizer.zip'))
                 print("Model is saved in {}".format(path_root))
                 with zipfile.ZipFile(os.path.join(path_root,'VnBertTokenizer.zip'), 'r') as zip_ref:
