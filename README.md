@@ -1,5 +1,7 @@
 # Vietnamese toolkit with bert
-ViNLP is a system annotation for Vietnamese, it use pretrain [Bert4news](https://github.com/bino282/bert4news/) to fine-turning to NLP problems in Vietnamese components of wordsegmentation,Named entity recognition (NER)  and achieve high accuravy.
+ViNLP is a system annotation for Vietnamese, it use pretrain [Bert4news](https://github.com/bino282/bert4news/) to fine-turning to NLP problems in Vietnamese components of wordsegmentation,Named entity recognition (NER)  and achieve high accuracy.
+
+New version of tookit use pretrained model NlpHUST/electra-base-vn with higher accuaracy and easier to use at [NlpHUST/ner-vietnamese-electra-base](https://huggingface.co/NlpHUST/ner-vietnamese-electra-base?text=Li%C3%AAn+quan+v%E1%BB%A5+vi%E1%BB%87c+CSGT+b%E1%BB%8B+t%E1%BB%91+%C4%91%C3%A1nh+d%C3%A2n%2C+tr%C3%BAng+m%E1%BB%99t+ch%C3%A1u+nh%E1%BB%8F+%C4%91ang+ng%E1%BB%A7%2C+%C4%91ang+lan+truy%E1%BB%81n+tr%C3%AAn+m%E1%BA%A1ng+x%C3%A3+h%E1%BB%99i%2C+%C4%90%E1%BA%A1i+t%C3%A1+Nguy%E1%BB%85n+V%C4%83n+T%E1%BA%A3o%2C+Ph%C3%B3+Gi%C3%A1m+%C4%91%E1%BB%91c+C%C3%B4ng+an+t%E1%BB%89nh+Ti%E1%BB%81n+Giang+v%E1%BB%ABa+c%C3%B3+cu%E1%BB%99c+h%E1%BB%8Dp+c%C3%B9ng+Ch%E1%BB%89+huy+C%C3%B4ng+an+huy%E1%BB%87n+Ch%C3%A2u+Th%C3%A0nh+v%C3%A0+m%E1%BB%99t+s%E1%BB%91+%C4%91%C6%A1n+v%E1%BB%8B+nghi%E1%BB%87p+v%E1%BB%A5+c%E1%BA%A5p+t%E1%BB%89nh+%C4%91%E1%BB%83+ch%E1%BB%89+%C4%91%E1%BA%A1o+l%C3%A0m+r%C3%B5+th%C3%B4ng+tin.)
 
 ### Installation
 ```bash
